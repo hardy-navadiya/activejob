@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dxczyev2z
+  api_key: '358683474178399'
+  api_secret: "ZeASEKsHJaILAb4d1-npW5NwY40"
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dxczyev2z
+  api_key: '358683474178399'
+  api_secret: "ZeASEKsHJaILAb4d1-npW5NwY40"
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dxczyev2z
+  api_key: '358683474178399'
+  api_secret: "ZeASEKsHJaILAb4d1-npW5NwY40"
+  enhance_image_tag: true
+  static_file_support: false

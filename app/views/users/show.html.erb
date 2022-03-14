@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <% if @user.avatar.attached? %>
+    <%= cl_image_path(@user.avatar.key, :cloud_name => 'dxczyev2z',  :width => 400, :crop => "pad")%>
+    <%= image_tag (@user.avatar), class:"user_image" %>
+  <% end %>
+</p>
+
+<p>
+   <%= cl_video_path(@user.clip.key, :cloud_name => 'dxczyev2z',  :width=>150, :crop=>"fill")%>
+    <video controls>
+      <source src="<%= url_for(@user.clip) %>">
+    </video>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

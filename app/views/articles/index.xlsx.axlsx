@@ -1,0 +1,9 @@
+excel = xlsx_package.workbook
+
+excel.add_worksheet(name: "Articles") do |sheet|
+  sheet.add_row %w(id name email)
+  
+  @articles.each do |article|
+    sheet.add_row [article.id, article.title, article.description]
+  end
+end
